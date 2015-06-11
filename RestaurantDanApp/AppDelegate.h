@@ -4,7 +4,7 @@
 //
 //  Created by DvirSofer on 6/11/15.
 //  Copyright (c) 2015 DvirSofer. All rights reserved.
-// Awsome
+// 
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
