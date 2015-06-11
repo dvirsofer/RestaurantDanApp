@@ -428,6 +428,7 @@
 				44F6C80C1B29A29000B3CAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F6C80D1B29A29000B3CAEF /* Build configuration list for PBXNativeTarget "RestaurantDanAppTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +437,7 @@
 				44F6C80F1B29A29000B3CAEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
