@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CD4D67E1B2B5725001DA020 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D67D1B2B5725001DA020 /* Controllers */; };
+		1CD4D6811B2B5731001DA020 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D67F1B2B5731001DA020 /* Models */; };
+		1CD4D6821B2B5731001DA020 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D6801B2B5731001DA020 /* Views */; };
 		44F6C7E71B29A28F00B3CAEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F6C7E61B29A28F00B3CAEF /* main.m */; };
 		44F6C7EA1B29A28F00B3CAEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F6C7E91B29A28F00B3CAEF /* AppDelegate.m */; };
 		44F6C7ED1B29A28F00B3CAEF /* RestaurantDanApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44F6C7EB1B29A28F00B3CAEF /* RestaurantDanApp.xcdatamodeld */; };
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CD4D67D1B2B5725001DA020 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		1CD4D67F1B2B5731001DA020 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		1CD4D6801B2B5731001DA020 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
 		44F6C7E11B29A28F00B3CAEF /* RestaurantDanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestaurantDanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F6C7E51B29A28F00B3CAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44F6C7E61B29A28F00B3CAEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 		44F6C7E31B29A28F00B3CAEF /* RestaurantDanApp */ = {
 			isa = PBXGroup;
 			children = (
+				1CD4D67F1B2B5731001DA020 /* Models */,
+				1CD4D6801B2B5731001DA020 /* Views */,
+				1CD4D67D1B2B5725001DA020 /* Controllers */,
 				44F6C7E81B29A28F00B3CAEF /* AppDelegate.h */,
 				44F6C7E91B29A28F00B3CAEF /* AppDelegate.m */,
 				44F6C7F41B29A28F00B3CAEF /* Main.storyboard */,
@@ -197,8 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD4D6811B2B5731001DA020 /* Models in Resources */,
 				44F6C7F61B29A28F00B3CAEF /* Main.storyboard in Resources */,
 				44F6C7FB1B29A28F00B3CAEF /* LaunchScreen.xib in Resources */,
+				1CD4D6821B2B5731001DA020 /* Views in Resources */,
+				1CD4D67E1B2B5725001DA020 /* Controllers in Resources */,
 				44F6C7F81B29A28F00B3CAEF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
