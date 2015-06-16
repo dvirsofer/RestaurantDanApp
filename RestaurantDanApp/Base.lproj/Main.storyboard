@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wt0-IL-7Uu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -12,42 +13,115 @@
                         <viewControllerLayoutGuide type="top" id="EIV-i0-whT"/>
                         <viewControllerLayoutGuide type="bottom" id="ttB-vg-y9M"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tyh-AB-h5V">
+                    <view key="view" contentMode="scaleToFill" id="Tyh-AB-h5V" userLabel="PageContainer">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-Z7-a1k">
+                                <rect key="frame" x="278" y="176" width="44" height="30"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="התחבר">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="272" width="44" height="30"/>
+                                </variation>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="תעודת זהות" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-Qm-1bp">
-                                <rect key="frame" x="16" y="180" width="568" height="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <rect key="frame" x="167" y="293" width="267" height="30"/>
+                                <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="215" width="267" height="30"/>
+                                </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-Z7-a1k">
-                                <rect key="frame" x="184" y="285" width="44" height="30"/>
-                                <state key="normal" title="התחבר">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="אפליקציית מזנון" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dim-R2-jJa">
-                                <rect key="frame" x="248" y="20" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.015686275440000001" green="0.33333334329999997" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="מספר אישי" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lba-gS-umP">
-                                <rect key="frame" x="16" y="142" width="568" height="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <rect key="frame" x="167" y="236" width="267" height="30"/>
+                                <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="156" width="267" height="30"/>
+                                </variation>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ia9-dI-UBh">
+                                <rect key="frame" x="0.0" y="20" width="600" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="מזנון" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dim-R2-jJa">
+                                        <rect key="frame" x="297" y="12" width="79" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.015686275440000001" green="0.33333334329999997" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="191" y="8" width="79" height="48"/>
+                                        </variation>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dan_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-yO-5lE">
+                                        <rect key="frame" x="209" y="0.0" width="80" height="85"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2VJ-yO-5lE" firstAttribute="top" secondItem="ia9-dI-UBh" secondAttribute="topMargin" constant="8" id="TQl-6f-fG2"/>
+                                    <constraint firstAttribute="width" constant="368" id="WOh-0p-aDD"/>
+                                    <constraint firstAttribute="height" constant="85" id="b3Y-FC-FZP"/>
+                                    <constraint firstItem="2VJ-yO-5lE" firstAttribute="leading" secondItem="ia9-dI-UBh" secondAttribute="leadingMargin" constant="95" id="hT1-s2-VMm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WOh-0p-aDD"/>
+                                        <exclude reference="b3Y-FC-FZP"/>
+                                        <exclude reference="TQl-6f-fG2"/>
+                                        <exclude reference="hT1-s2-VMm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WOh-0p-aDD"/>
+                                        <include reference="b3Y-FC-FZP"/>
+                                        <include reference="TQl-6f-fG2"/>
+                                        <include reference="hT1-s2-VMm"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.28627450980392155" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ia9-dI-UBh" firstAttribute="trailing" secondItem="Tyh-AB-h5V" secondAttribute="trailingMargin" id="AQd-BZ-85C"/>
+                            <constraint firstAttribute="centerX" secondItem="ia9-dI-UBh" secondAttribute="centerX" id="Pzs-sh-wOA"/>
+                            <constraint firstItem="ia9-dI-UBh" firstAttribute="leading" secondItem="Tyh-AB-h5V" secondAttribute="leadingMargin" id="q8E-MV-tTa"/>
+                            <constraint firstItem="ia9-dI-UBh" firstAttribute="top" secondItem="EIV-i0-whT" secondAttribute="bottom" id="zJF-Kg-EhQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AQd-BZ-85C"/>
+                                <exclude reference="Pzs-sh-wOA"/>
+                                <exclude reference="q8E-MV-tTa"/>
+                                <exclude reference="zJF-Kg-EhQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="AQd-BZ-85C"/>
+                                <include reference="Pzs-sh-wOA"/>
+                                <include reference="q8E-MV-tTa"/>
+                                <include reference="zJF-Kg-EhQ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otc-iN-Bmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="38"/>
+            <point key="canvasLocation" x="-9" y="120"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dan_logo" width="80" height="85"/>
+    </resources>
 </document>

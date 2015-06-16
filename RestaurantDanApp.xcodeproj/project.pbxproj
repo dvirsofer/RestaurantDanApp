@@ -65,9 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C433D5C1B3070510077CBEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C433D5D1B30705D0077CBEC /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1C433D5D1B30705D0077CBEC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		44F6C7D81B29A28E00B3CAEF = {
 			isa = PBXGroup;
 			children = (
+				1C433D5C1B3070510077CBEC /* Resources */,
 				44F6C7E31B29A28F00B3CAEF /* RestaurantDanApp */,
 				44F6C8031B29A29000B3CAEF /* RestaurantDanAppTests */,
 				44F6C7E21B29A28F00B3CAEF /* Products */,
@@ -358,7 +374,6 @@
 		44F6C80B1B29A29000B3CAEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RestaurantDanApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +383,6 @@
 		44F6C80C1B29A29000B3CAEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RestaurantDanApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
