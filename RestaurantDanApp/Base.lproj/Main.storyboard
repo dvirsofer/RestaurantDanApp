@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wt0-IL-7Uu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wt0-IL-7Uu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1K-Z7-a1k">
-                                <rect key="frame" x="278" y="176" width="44" height="30"/>
+                                <rect key="frame" x="278" y="285" width="44" height="30"/>
                                 <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="התחבר">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,8 +33,32 @@
                                     <rect key="frame" x="183" y="272" width="44" height="30"/>
                                 </variation>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="תעודת זהות" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-Qm-1bp">
-                                <rect key="frame" x="167" y="293" width="267" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מספר אישי" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bs1-0c-77Q">
+                                <rect key="frame" x="16" y="172" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תעודת זהות" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBZ-TJ-OEQ">
+                                <rect key="frame" x="503" y="206" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מזנון" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dim-R2-jJa">
+                                <rect key="frame" x="16" y="28" width="568" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.015686275440000001" green="0.33333334329999997" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="191" y="8" width="79" height="48"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dan_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KaG-L1-SwO">
+                                <rect key="frame" x="271" y="84" width="58" height="36"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="180" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2MP-Qm-1bp">
+                                <rect key="frame" x="32" y="193" width="180" height="30"/>
                                 <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -42,8 +66,8 @@
                                     <rect key="frame" x="67" y="215" width="267" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="מספר אישי" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lba-gS-umP">
-                                <rect key="frame" x="167" y="236" width="267" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lba-gS-umP">
+                                <rect key="frame" x="32" y="155" width="200" height="30"/>
                                 <color key="textColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -51,69 +75,24 @@
                                     <rect key="frame" x="67" y="156" width="267" height="30"/>
                                 </variation>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ia9-dI-UBh">
-                                <rect key="frame" x="0.0" y="20" width="600" height="72"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="מזנון" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dim-R2-jJa">
-                                        <rect key="frame" x="297" y="12" width="79" height="48"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="highlightedColor" red="0.015686275440000001" green="0.33333334329999997" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="191" y="8" width="79" height="48"/>
-                                        </variation>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dan_logo" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-yO-5lE">
-                                        <rect key="frame" x="209" y="0.0" width="80" height="85"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="2VJ-yO-5lE" firstAttribute="top" secondItem="ia9-dI-UBh" secondAttribute="topMargin" constant="8" id="TQl-6f-fG2"/>
-                                    <constraint firstAttribute="width" constant="368" id="WOh-0p-aDD"/>
-                                    <constraint firstAttribute="height" constant="85" id="b3Y-FC-FZP"/>
-                                    <constraint firstItem="2VJ-yO-5lE" firstAttribute="leading" secondItem="ia9-dI-UBh" secondAttribute="leadingMargin" constant="95" id="hT1-s2-VMm"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="WOh-0p-aDD"/>
-                                        <exclude reference="b3Y-FC-FZP"/>
-                                        <exclude reference="TQl-6f-fG2"/>
-                                        <exclude reference="hT1-s2-VMm"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="WOh-0p-aDD"/>
-                                        <include reference="b3Y-FC-FZP"/>
-                                        <include reference="TQl-6f-fG2"/>
-                                        <include reference="hT1-s2-VMm"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.28627450980392155" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ia9-dI-UBh" firstAttribute="trailing" secondItem="Tyh-AB-h5V" secondAttribute="trailingMargin" id="AQd-BZ-85C"/>
-                            <constraint firstAttribute="centerX" secondItem="ia9-dI-UBh" secondAttribute="centerX" id="Pzs-sh-wOA"/>
-                            <constraint firstItem="ia9-dI-UBh" firstAttribute="leading" secondItem="Tyh-AB-h5V" secondAttribute="leadingMargin" id="q8E-MV-tTa"/>
-                            <constraint firstItem="ia9-dI-UBh" firstAttribute="top" secondItem="EIV-i0-whT" secondAttribute="bottom" id="zJF-Kg-EhQ"/>
+                            <constraint firstItem="KaG-L1-SwO" firstAttribute="top" secondItem="Dim-R2-jJa" secondAttribute="bottom" constant="8" id="1L6-E2-EE1"/>
+                            <constraint firstItem="lba-gS-umP" firstAttribute="top" secondItem="KaG-L1-SwO" secondAttribute="bottom" constant="35" id="23M-Yh-ChW"/>
+                            <constraint firstItem="TBZ-TJ-OEQ" firstAttribute="trailing" secondItem="Tyh-AB-h5V" secondAttribute="trailingMargin" id="BjP-EC-SEM"/>
+                            <constraint firstAttribute="centerX" secondItem="bs1-0c-77Q" secondAttribute="centerX" id="DqO-Ph-IFM"/>
+                            <constraint firstAttribute="centerX" secondItem="KaG-L1-SwO" secondAttribute="centerX" id="EPH-2t-9KE"/>
+                            <constraint firstItem="2MP-Qm-1bp" firstAttribute="top" secondItem="lba-gS-umP" secondAttribute="bottom" constant="8" id="HjZ-hM-un0"/>
+                            <constraint firstItem="lba-gS-umP" firstAttribute="leading" secondItem="Tyh-AB-h5V" secondAttribute="leadingMargin" constant="16" id="I5W-s2-Wy5"/>
+                            <constraint firstItem="Dim-R2-jJa" firstAttribute="leading" secondItem="Tyh-AB-h5V" secondAttribute="leadingMargin" id="MSN-dj-IWI"/>
+                            <constraint firstItem="2MP-Qm-1bp" firstAttribute="leading" secondItem="Tyh-AB-h5V" secondAttribute="leadingMargin" constant="16" id="P0B-2T-kLQ"/>
+                            <constraint firstItem="bs1-0c-77Q" firstAttribute="top" secondItem="Dim-R2-jJa" secondAttribute="bottom" constant="96" id="ROA-EG-xB3"/>
+                            <constraint firstItem="TBZ-TJ-OEQ" firstAttribute="top" secondItem="bs1-0c-77Q" secondAttribute="bottom" constant="13" id="aix-9s-dHH"/>
+                            <constraint firstItem="Dim-R2-jJa" firstAttribute="trailing" secondItem="Tyh-AB-h5V" secondAttribute="trailingMargin" id="jiA-as-HmW"/>
+                            <constraint firstItem="bs1-0c-77Q" firstAttribute="trailing" secondItem="Tyh-AB-h5V" secondAttribute="trailingMargin" id="mMp-XM-tYL"/>
+                            <constraint firstItem="Dim-R2-jJa" firstAttribute="top" secondItem="EIV-i0-whT" secondAttribute="bottom" constant="8" id="prE-JL-sWB"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="AQd-BZ-85C"/>
-                                <exclude reference="Pzs-sh-wOA"/>
-                                <exclude reference="q8E-MV-tTa"/>
-                                <exclude reference="zJF-Kg-EhQ"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="AQd-BZ-85C"/>
-                                <include reference="Pzs-sh-wOA"/>
-                                <include reference="q8E-MV-tTa"/>
-                                <include reference="zJF-Kg-EhQ"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otc-iN-Bmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,6 +101,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dan_logo" width="80" height="85"/>
+        <image name="dan_logo" width="58" height="36"/>
     </resources>
 </document>
