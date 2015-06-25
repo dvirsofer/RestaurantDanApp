@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wt0-IL-7Uu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--מסך כניסה-->
         <scene sceneID="vD6-uR-niM">
             <objects>
-                <viewController id="Wt0-IL-7Uu" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController title="מסך כניסה" id="Wt0-IL-7Uu" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EIV-i0-whT"/>
                         <viewControllerLayoutGuide type="bottom" id="ttB-vg-y9M"/>
@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="-672" y="-310"/>
         </scene>
-        <!--View Controller-->
+        <!--מסך ראשי-->
         <scene sceneID="eRx-e1-IB2">
             <objects>
-                <viewController id="n5C-op-T3W" sceneMemberID="viewController">
+                <viewController title="מסך ראשי" id="n5C-op-T3W" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u9z-kl-JpV"/>
                         <viewControllerLayoutGuide type="bottom" id="U5X-5V-y1h"/>
@@ -122,7 +122,7 @@
                                     <rect key="frame" x="184" y="285" width="33" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="HW7-GR-nuz" kind="show" id="tFa-he-gne"/>
+                                    <segue destination="HW7-GR-nuz" kind="show" id="rVw-Ya-oRs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,12 +141,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftU-Kz-IbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="-321"/>
+            <point key="canvasLocation" x="36" y="-321"/>
         </scene>
-        <!--View Controller-->
+        <!--קבלה-->
         <scene sceneID="Oxu-Us-w5N">
             <objects>
-                <viewController id="HW7-GR-nuz" sceneMemberID="viewController">
+                <viewController title="קבלה" id="HW7-GR-nuz" customClass="CheckTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRy-s5-83I"/>
                         <viewControllerLayoutGuide type="bottom" id="0WJ-Gp-9hv"/>
@@ -155,7 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gGj-Qk-gq5" customClass="CheckTableViewController">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gGj-Qk-gq5">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -165,12 +165,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shm-qB-zqB" id="q4y-iO-qYo">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-aR-fKC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="342" y="0.0" width="50" height="43"/>
-                                                    </variation>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDW-AH-CTf">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -198,21 +192,27 @@
                                                         <rect key="frame" x="179" y="11" width="42" height="21"/>
                                                     </variation>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-aR-fKC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="342" y="0.0" width="50" height="43"/>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="dcP-aR-fKC"/>
                                                     <exclude reference="qDW-AH-CTf"/>
                                                     <exclude reference="z8c-Dd-UcI"/>
                                                     <exclude reference="Uk2-5f-6ov"/>
+                                                    <exclude reference="dcP-aR-fKC"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="dcP-aR-fKC"/>
                                                     <include reference="qDW-AH-CTf"/>
                                                     <include reference="z8c-Dd-UcI"/>
                                                     <include reference="Uk2-5f-6ov"/>
+                                                    <include reference="dcP-aR-fKC"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -225,7 +225,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="54" width="400" height="338"/>
+                                    <rect key="frame" x="23" y="-19" width="400" height="338"/>
                                 </variation>
                             </tableView>
                         </subviews>
@@ -244,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1x-Cz-T3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="-323"/>
+            <point key="canvasLocation" x="885" y="-328"/>
         </scene>
     </scenes>
     <resources>
