@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1C21F61B3C7AD200A64E9D /* dan_logo_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1C21F51B3C7AD200A64E9D /* dan_logo_x1.png */; };
 		1CD4D67E1B2B5725001DA020 /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D67D1B2B5725001DA020 /* Controllers */; };
 		1CD4D6811B2B5731001DA020 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D67F1B2B5731001DA020 /* Models */; };
 		1CD4D6821B2B5731001DA020 /* Views in Resources */ = {isa = PBXBuildFile; fileRef = 1CD4D6801B2B5731001DA020 /* Views */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1C21F51B3C7AD200A64E9D /* dan_logo_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dan_logo_x1.png; sourceTree = "<group>"; };
 		1CD4D67D1B2B5725001DA020 /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
 		1CD4D67F1B2B5731001DA020 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
 		1CD4D6801B2B5731001DA020 /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		44F6C7D81B29A28E00B3CAEF = {
 			isa = PBXGroup;
 			children = (
+				1C1C21F51B3C7AD200A64E9D /* dan_logo_x1.png */,
 				1C433D5C1B3070510077CBEC /* Resources */,
 				44F6C7E31B29A28F00B3CAEF /* RestaurantDanApp */,
 				44F6C8031B29A29000B3CAEF /* RestaurantDanAppTests */,
@@ -228,6 +231,7 @@
 				1CD4D6821B2B5731001DA020 /* Views in Resources */,
 				1CD4D67E1B2B5725001DA020 /* Controllers in Resources */,
 				44F6C7F81B29A28F00B3CAEF /* Images.xcassets in Resources */,
+				1C1C21F61B3C7AD200A64E9D /* dan_logo_x1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
